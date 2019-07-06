@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react'
 
-const App = () => (
-  <div className="App">
-  </div>
-);
+import Posts from './dup/Posts'
+import Comments from './dup/Comments'
+import Selector from './components/Selector/Selector'
 
-export default App;
+const App = () => {
+  const [strategy, setStrategy] = useState('duplicated_code')
+  const [post, setPost] = useState(null)
+  return (
+    <div className="app">
+      <div className="content">
+        <Posts currentPost={post} setPost={setPost} />
+        {post && <Comments currentPost={post} key={post} />}
+      </div>
+      <Selector choice={strategy} setChoice={setStrategy} />
+    </div>
+  )
+}
+
+export default App
