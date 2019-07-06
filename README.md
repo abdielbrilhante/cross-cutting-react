@@ -1,4 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DEMO app for the Meetup Front-end CE
+
+This is a demo app for a talk on cross-cutting concerns in React; is contains examples for a simple post/comments view with four different implementations:
+
+- Duplicated code
+- Higher-order component
+- Render props
+- Custom hook
+
+## Reference links
+
+These are some articles/docs/sources (some used as a reference, other are simply interesting articles on the subject):
+
+- [Mixins Considered Harmful](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html)
+- [Vue mixins](https://vuejs.org/v2/guide/mixins.html)
+- [withRouter source](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/modules/withRouter.js)
+- [Use a Render Prop!](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)
+- [Making Sense of React Hooks](https://dev.to/dan_abramov/making-sense-of-react-hooks-2eib)
 
 ## Available Scripts
 
