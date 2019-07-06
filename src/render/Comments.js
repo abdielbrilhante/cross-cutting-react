@@ -2,7 +2,7 @@ import React from 'react'
 import Loader from '../components/Loader/Loader'
 import Fetch from './Fetch'
 
-const Posts = ({ currentPost }) => (
+const Comments = ({ currentPost }) => (
   <Fetch
     endpoint={`/posts/${currentPost}/comments`}
     render={({ loading, data: comments }) => (
@@ -25,4 +25,4 @@ const Posts = ({ currentPost }) => (
   />
 )
 
-export default Posts
+export default Comments

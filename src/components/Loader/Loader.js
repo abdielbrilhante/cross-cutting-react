@@ -4,7 +4,7 @@ import './Loader.sass'
 
 const Loader = () => (
   <div className="loader">
-    <img src={loader} />
+    <img alt="loader" src={loader} />
   </div>
 )
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Loader from '../components/Loader/Loader'
-import withFetch from './withFetch'
+import useFetch from './useFetch'
 
-const Comments = ({ fetchedData }) => {
-  const { loading, data: comments } = fetchedData
+const Comments = ({ currentPost }) => {
+  const { loading, data: comments } = useFetch(`/posts/${currentPost}/comments`)
   return (
     <div className="comments">
       <h3>Post comments</h3>
@@ -23,4 +23,4 @@ const Comments = ({ fetchedData }) => {
   )
 }
 
-export default withFetch(({ currentPost }) => `/posts/${currentPost}/comments`)(Comments)
+export default Comments
